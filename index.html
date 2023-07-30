@@ -4,35 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fazt</title>
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <section class="logo">
-        <a class="logo-img" href="">
-          <img src="./svg/t-logo.svg" alt="" />
+    <header class="header">
+      <section class="header__logo">
+        <a href="#">
+          <img src="./svg/purple-logo-01.svg" alt="" />
         </a>
       </section>
-      <nav class="menu">
+      <nav class="header__nav menu">
         <!-- show -->
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact </a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <section class="burger" onclick="toggleMenu()">
+      <section class="header__burger burger" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </section>
     </header>
+
+    <main class="main">
+      <figure>
+        <img src="./img/hero.jpg" alt="" />
+      </figure>
+      <article>
+        <h1>Fazt <span>@FaztTech</span></h1>
+        <p>
+          Fazt es un canal en donde podrás encontrar una variedad de videos de
+          programación, desarrollo Web y muchos otros temas relacionados al
+          mundo de la informática en general. Desde aprender las bases de un
+          lenguaje de programacion hasta subir tu sitio o aplicación Web.
+          Bienvenido al mundo de la web, un mundo en el que la información es
+          libre, al igual que la información de este canal.
+        </p>
+      </article>
+    </main>
+
+    <section class="content">
+      <h2>Last YouTube Videos</h2>
+      <!-- Content -->
+      <article class="content__video">
+        <figure>
+          <img src="./img/x.jpg" alt="" />
+        </figure>
+        <div>
+          <p>
+            Twitter y AWS entrando al juego de los servicios basados en
+            Inteligencia Artificial
+          </p>
+        </div>
+      </article>
+    </section>
 
     <script>
       function toggleMenu() {
