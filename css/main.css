@@ -101,7 +101,7 @@ a {
   padding: 5vw 5vw;
 }
 
-article {
+.main__article {
   padding: 5vw 5vw;
 }
 
@@ -132,9 +132,22 @@ article p {
   text-align: center;
 }
 
-.content article figure img {
+.content .content__show {
+  display: grid;
+  /* Example: grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  /* Como MINIMO 200px o el 100% con un maximo de un 1fr */
+  gap: 20px;
+}
+
+/* .content__show .content__video {
+
+} */
+
+.content__video figure img {
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
 }
 
 .content__video div p {
