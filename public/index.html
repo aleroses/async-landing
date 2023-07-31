@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fazt</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,12 +15,13 @@
   </head>
   <body>
     <header class="header">
-      <section class="header__logo">
+      <section class="header__logo item-1">
         <a href="#">
           <img src="./svg/purple-logo-01.svg" alt="" />
         </a>
       </section>
-      <nav class="header__nav menu">
+      
+      <nav class="header__nav menu item-2">
         <!-- show -->
         <ul>
           <li><a href="#">About</a></li>
@@ -27,10 +29,18 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <section class="header__burger burger" onclick="toggleMenu()">
+
+      <section class="header__burger burger item-3" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
+      </section>
+
+      <section class="mode item-4">
+        <figure class="dark-mode" onclick="toggleLight()">
+          <!-- light-mode -->
+          <button></button>
+        </figure>
       </section>
     </header>
 
@@ -79,9 +89,16 @@
 
     <script src="./main.js"></script>
     <script>
+      /* Burger Menu */
       function toggleMenu() {
         let menu = document.querySelector(".menu");
         menu.classList.toggle("show");
+      }
+
+      /* Dark mode */
+      function toggleLight() {
+        let btn = document.querySelector(".dark-mode");
+        btn.classList.toggle("light-mode");
       }
     </script>
   </body>
