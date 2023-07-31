@@ -66,7 +66,10 @@ body {
   top: 12vh;
   left: calc(100% - 47%);
   padding: 5px 10px;
-  background-color: var(--first-color);
+  background-color: rgba(79, 70, 229, 0.2);
+  /* 
+  #4f46e5
+  */
 }
 
 .show ul {
@@ -88,7 +91,6 @@ a {
   width: 92vw;
   height: auto;
   display: grid;
-  background-color: var(--second-color);
 }
 
 /* figure {
@@ -124,6 +126,7 @@ article p {
   width: 92vw;
   height: auto;
   padding: 5vw 5vw;
+  background-color: var(--second-color);
 }
 
 .content h2 {
@@ -137,4 +140,34 @@ article p {
 
 .content__video div p {
   color: var(--fitfh-color);
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+  padding: 5vw 5vw;
+}
+
+footer h2 {
+  color: var(--fourth-color);
+}
+
+h2 span {
+  color: var(--third-color);
+}
+
+footer div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer div a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer div a img {
+  width: 80%;
 }
