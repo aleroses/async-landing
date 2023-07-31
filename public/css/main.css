@@ -66,8 +66,10 @@ body {
   top: 12vh;
   left: calc(100% - 47%);
   padding: 5px 10px;
-  background-color: var(--second-color);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(79, 70, 229, 0.2);
+  /* 
+  #4f46e5
+  */
 }
 
 .show ul {
@@ -157,18 +159,15 @@ h2 span {
 }
 
 footer div {
-  
   display: flex;
   justify-content: flex-end;
 }
 
 footer div a {
-  
   display: flex;
   justify-content: flex-end;
 }
 
-footer div a img{
+footer div a img {
   width: 80%;
-  
 }
