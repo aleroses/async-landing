@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #f1f1ee;
+  --secondary-color: #ddae0f;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+}
+
+.mode {
+  background-color: var(--primary-color);
+}
+
+.main__article h1 {
+  color: var(--first-color);
+}
+
+.content {
+  background-color: var(--third-color);
+}
+
+.content div p {
+  color: var(--primary-color);
+}
+
+footer h2 {
+  color: var(--first-color);
+}

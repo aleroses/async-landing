@@ -244,6 +244,7 @@ h2 span {
 footer div {
   display: flex;
   justify-content: flex-end;
+  padding: 25px 0 0 0;
 }
 
 footer div a {

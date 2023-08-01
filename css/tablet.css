@@ -22,8 +22,8 @@
   position: static;
   flex-direction: row;
   gap: 20px;
-	padding: 15px;
-	justify-content: center;
+  padding: 15px;
+  justify-content: center;
   background-color: var(--second-color);
 }
 
