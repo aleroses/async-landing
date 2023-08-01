@@ -11,6 +11,14 @@ body {
   background-color: var(--primary-color);
 }
 
+.menu {
+  background-color: rgba(241, 241, 238, 0.5);
+}
+
+.menu a {
+  color: var(--first-color);
+}
+
 .mode {
   background-color: var(--primary-color);
 }
