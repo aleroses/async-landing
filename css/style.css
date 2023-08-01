@@ -14,18 +14,21 @@
 }
 
 body {
+  height: auto;
   background-color: var(--first-color);
-  padding: 2vw 4vw;
+  padding: 2vw 4vw 0;
   font-family: "Ubuntu", sans-serif;
 }
 
 /* -------------------------- HEADER ---------------------------- */
 .header {
   width: 92vw;
+  max-width: 1000px;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -45,15 +48,20 @@ body {
 }
 
 .header__nav {
+  display: flex;
+  order: 1;
+}
+
+.menu {
   display: none;
+  list-style: none;
 }
 
-.header__burger {
+.burger {
   cursor: pointer;
-  order: 2;
 }
 
-.header__burger .bar {
+.burger .bar {
   width: 25px;
   height: 3px;
   background-color: var(--third-color);
@@ -62,12 +70,15 @@ body {
 
 .show {
   width: 44vw;
+  /* max-width: 200px; */
   height: 140px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
   top: 12vh;
-  left: calc(100% - 47%);
-  padding: 5px 10px;
+  left: calc(100% - 48vw);
+  padding: 15px 20px;
   background-color: rgba(15, 17, 26, 0.5);
   /* background-color: rgba(79, 70, 229, 0.2); */
 }
@@ -83,16 +94,17 @@ body {
 a {
   text-decoration: none;
   color: var(--fourth-color);
+  font-weight: 600;
 }
 
 /*----------------------------- DARK MODE --------------------------*/
 .mode {
-  width: 100%;
+  width: 60%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 34px 0 0;
+  /* padding: 0 4vw 0 0; */
   background-color: var(--first-color);
 }
 
@@ -135,8 +147,11 @@ a {
 
 .main {
   width: 92vw;
+  max-width: 1000px;
   height: auto;
   display: grid;
+  justify-items: center;
+  margin: 0 auto;
 }
 
 /* figure {
@@ -145,8 +160,9 @@ a {
 
 .main figure img {
   width: 100%;
+  max-width: 400px;
   height: 100%;
-  padding: 5vw 5vw;
+  padding: 15px;
 }
 
 .main__article {
@@ -166,16 +182,19 @@ article p {
   color: var(--fitfh-color);
 }
 
-/* Content */
+/*------------------------------ CONTENT -----------------------*/
 
 .content {
   width: 92vw;
+  max-width: 1000px;
   height: auto;
   padding: 5vw 5vw;
   background-color: var(--second-color);
+  margin: 0 auto;
 }
 
 .content h2 {
+  height: 46px;
   color: var(--fourth-color);
   text-align: center;
 }
@@ -202,12 +221,16 @@ article p {
   color: var(--fitfh-color);
 }
 
-/* Footer */
+/*-------------------------- FOOTER -------------------*/
 footer {
+  max-width: 1000px;
+  height: 100px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: end;
-  padding: 5vw 5vw;
+  padding: 0 5vw;
+  margin: 0 auto;
+  align-items: center;
 }
 
 footer h2 {

@@ -1,0 +1,11 @@
+.main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.main figure {
+	order: 1;
+}
+
+.main__article {
+	align-self: center;
+}
