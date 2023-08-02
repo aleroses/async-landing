@@ -7,9 +7,9 @@ body {
   background-color: var(--primary-color);
 }
 
-.header {
+/* .header {
   background-color: var(--primary-color);
-}
+} */
 
 .menu {
   background-color: rgba(241, 241, 238, 0.5);
