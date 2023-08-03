@@ -109,9 +109,9 @@ a {
 }
 
 .mode figure {
-  width: 30px;
-  height: 30px;
-  background-color: var(--third-color);
+  width: 40px;
+  height: 40px;
+  /* background-color: var(--third-color); xxx*/
   border-radius: 50%;
   cursor: pointer;
   padding: 5px;
@@ -127,10 +127,11 @@ a {
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  background-color: var(--third-color);
+  /* background-color: var(--third-color); */
+  background-color: var(--first-color);
 }
 
-.light-mode button {
+/* .light-mode button {
   background-image: url("../svg/sun.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +142,7 @@ a {
   cursor: pointer;
   border-radius: 50%;
   background-color: var(--third-color);
-}
+} */
 
 /* -------------------------- MAIN ---------------------------- */
 
