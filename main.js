@@ -5,6 +5,7 @@ const content = document.querySelector('.content__show') || null;
 const options = {
 	method: 'GET',
 	headers: {
+		// Esta key no se debe mostrar 
 		'X-RapidAPI-Key': '6c8aec95f0mshc835fd1a770d505p1250bfjsn6fdebd898161',
 		'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
 	}
@@ -21,16 +22,18 @@ async function fetchData(urlApi) {
 		const videos = await fetchData(API);
 		let view = `
 			${videos.items.map(video => `
-				<article class="content__video">
-					<figure>
-						<img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" />
-					</figure>
-					<div>
-						<p>
-							${video.snippet.title}
-						</p>
-					</div>
-			</article>
+				<a href="https://youtube.com/watch?v=${video.id.videoId}" target="_blank">
+					<article class="content__video">
+						<figure>
+							<img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" />
+						</figure>
+						<div>
+							<p>
+								${video.snippet.title}
+							</p>
+						</div>
+					</article>
+				</a>
 			`).slice(0, 4).join('')}
 		`;
 
