@@ -22,26 +22,26 @@ async function fetchData(urlApi) {
   try {
     const videos = await fetchData(API);
     let view = `
-			${videos.items
+      ${videos.items
         .map(
           (video) => `
-				<a href="https://youtube.com/watch?v=${video.id.videoId}" target="_blank">
-					<article class="content__video">
-						<figure>
-							<img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" />
-						</figure>
-						<div>
-							<p>
-								${video.snippet.title}
-							</p>
-						</div>
-					</article>
-				</a>
-			`
+        <a href="https://youtube.com/watch?v=${video.id.videoId}" target="_blank">
+          <article class="content__video">
+            <figure>
+              <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" />
+            </figure>
+            <div>
+              <p>
+                ${video.snippet.title}
+              </p>
+            </div>
+          </article>
+        </a>
+      `
         )
         .slice(0, 8)
         .join("")}
-		`;
+    `;
 
     content.innerHTML = view;
   } catch (e) {
